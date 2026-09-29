@@ -29,7 +29,7 @@ The repository includes:
 - 10 example BVH motions and matching CSV results for all five bundled robots;
 - an interactive viewer for loading, retargeting, inspecting, and saving one motion;
 - a headless mode for converting folders of motions;
-- configuration and model assets for `unitree_g1`, `unitree_h2`, `booster_t1`, `agibot_x2ultra`, and `agibot-a3t3`;
+- configuration and model assets for `unitree_g1`, `unitree_h2`, `booster_t1`, `booster_k1`, `agibot_x2ultra`, and `agibot-a3t3` (`booster_k1` has no bundled reference CSVs; see [Booster K1](documentation/booster-k1.md));
 - tools for configuring another robot and tuning and optimizing inverse-kinematics weights.
 - 15 BVH motions for inverse-kinematics weights optimization
 
@@ -76,6 +76,7 @@ Use these exact target names when using bundled robots:
 - `unitree_g1` — the default target and the best choice for the first tutorial;
 - `unitree_h2`;
 - `booster_t1`;
+- `booster_k1` — see [Booster K1](documentation/booster-k1.md) for its calibration and validation;
 - `agibot_x2ultra`;
 - `agibot-a3t3`.
 
@@ -116,7 +117,7 @@ The bundled motion data under `assets/motions/bvh/`, `assets/motions/optimizer/`
 The repository directly includes third-party robot-description and mesh assets:
 
 - Unitree G1 and Unitree H2 assets are licensed under BSD-3-Clause. See [`licenses/unitree-LICENSE.txt`](licenses/unitree-LICENSE.txt).
-- Booster Robotics T1 assets are licensed under BSD-3-Clause. See [`licenses/booster-LICENSE.txt`](licenses/booster-LICENSE.txt).
+- Booster Robotics T1 and K1 assets are licensed under BSD-3-Clause. See [`licenses/booster-LICENSE.txt`](licenses/booster-LICENSE.txt).
 - AGIBot X2 and AGIBot A3 assets are licensed under Mulan PSL v2. See [`licenses/agibot-LICENSE.txt`](licenses/agibot-LICENSE.txt) and the pinned upstream [X2 source](https://github.com/AgibotTech/agibot_x2_urdf/tree/77f43eb0904dae4c48ccd9154fee824f8ffd4d38/X2_URDF-v1.4.0) and [A3 source](https://github.com/AgibotTech/A3-A3U-robot-model/tree/589f508ff357447c610a3f3004419035ddc8f153/a3_t3d0).
 
 The applicable robot-asset license texts and path scopes are also included in the top-level [LICENSE](LICENSE). License copies for Python dependencies are available in [`licenses/`](licenses/). Python dependencies are installed from package registries rather than copied into this repository.

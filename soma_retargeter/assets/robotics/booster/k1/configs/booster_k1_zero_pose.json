@@ -1,0 +1,9 @@
+{
+    "_note": "K1 reference (zero) pose for the SOMA calibration, input to app/tools/robot_calibration_headless.py. Matches the SOMA zero pose (soma_zero_frame0.bvh): upper arm 9.5 deg out from vertical and 2.8 deg forward, elbow bent 90 deg with the forearm pointing forward, legs straight. Joints not listed stay at 0 rad.",
+    "aaleft_shoulder_pitch_joint": -0.05,
+    "left_shoulder_roll_joint": -1.405,
+    "left_elbow_yaw_joint": -1.5708,
+    "aaright_shoulder_pitch_joint": -0.05,
+    "right_shoulder_roll_joint": 1.405,
+    "right_elbow_yaw_joint": 1.5708
+}

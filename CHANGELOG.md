@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased]
+
+### Added
+
+- Bundled `booster_k1` package: Booster K1 (22 DoF, no waist, 4-DoF arms, no hands) with its URDF and meshes, scaler, retargeter and post-processing configs, and the named reference pose used for calibration. See `documentation/booster-k1.md`.
+- `app/tools/robot_calibration_headless.py`: the Robot Configurator's scale, reference-pose and offset calibration without a window. It reproduces the bundled `booster_t1` scaler exactly from that robot's stored reference pose and scale.
+- `app/tools/validate_retarget.py`: kinematic quality metrics for retargeted CSVs (joint-limit contact, foot penetration and sliding, airborne frames, root height, joint-speed spikes), for comparing a new target against an established one.
+
 ## [0.2.0] - 2026-09-15
 
 ### Added
